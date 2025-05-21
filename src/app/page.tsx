@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import { Hero } from "@/components/layout/Hero";
 import Link from "next/link";
-import Hobbies from "@/components/layout/Hobbies";
+import { Hobbies } from "@/components/layout/Hobbies";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;

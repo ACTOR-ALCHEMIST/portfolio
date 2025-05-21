@@ -1,94 +1,72 @@
-"use client"
-import {Card, CardHeader, CardFooter, Image, Button} from "@heroui/react";
+"use client";
 
-export default function Hobbies() {
+import React from "react";
+import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+
+export function Hobbies() {
+  const cards = data.map((card, index) => (
+    <Card key={card.src} card={card} index={index} layout={true} />
+  ));
+
   return (
-    <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">What to watch</p>
-          <h4 className="text-white font-medium text-large">Stream the Acme event</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src="https://heroui.com/images/card-example-4.jpeg"
-        />
-      </Card>
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">Plant a tree</p>
-          <h4 className="text-white font-medium text-large">Contribute to the planet</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src="https://heroui.com/images/card-example-3.jpeg"
-        />
-      </Card>
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">Supercharged</p>
-          <h4 className="text-white font-medium text-large">Creates beauty like a beast</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src="https://heroui.com/images/card-example-2.jpeg"
-        />
-      </Card>
-      <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
-        <CardHeader className="absolute z-10 top-1 flex-col items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">New</p>
-          <h4 className="text-black font-medium text-2xl">Acme camera</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card example background"
-          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-          src="https://heroui.com/images/card-example-6.jpeg"
-        />
-        <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
-          <div>
-            <p className="text-black text-tiny">Available soon.</p>
-            <p className="text-black text-tiny">Get notified.</p>
-          </div>
-          <Button className="text-tiny" color="primary" radius="full" size="sm">
-            Notify Me
-          </Button>
-        </CardFooter>
-      </Card>
-      <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
-        <CardHeader className="absolute z-10 top-1 flex-col items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">Your day your way</p>
-          <h4 className="text-white/90 font-medium text-xl">Your checklist for better sleep</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Relaxing app background"
-          className="z-0 w-full h-full object-cover"
-          src="https://heroui.com/images/card-example-5.jpeg"
-        />
-        <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
-          <div className="flex flex-grow gap-2 items-center">
-            <Image
-              alt="Breathing app icon"
-              className="rounded-full w-10 h-11 bg-black"
-              src="https://heroui.com/images/breathing-app-icon.jpeg"
-            />
-            <div className="flex flex-col">
-              <p className="text-tiny text-white/60">Breathing App</p>
-              <p className="text-tiny text-white/60">Get a good night&#39;s sleep.</p>
-            </div>
-          </div>
-          <Button radius="full" size="sm">
-            Get App
-          </Button>
-        </CardFooter>
-      </Card>
+    <div className="w-full h-full py-20">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+        Learn more about my skills.
+      </h2>
+      <Carousel items={cards} />
     </div>
   );
 }
+
+const DummyContent = () => {
+  return (
+    <>
+      {[...new Array(3).fill(1)].map((_, index) => {
+        return (
+          <div
+            key={"dummy-content" + index}
+            className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+          >
+            <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+              <span className="font-bold text-neutral-700">
+                The first rule of Apple club is that you boast about Apple club.
+              </span>{" "}
+              Keep a journal, quickly jot down a grocery list, and take amazing
+              class notes. Want to convert those notes to text? No problem.
+              Langotiya jeetu ka mara hua yaar is ready to capture every
+              thought.
+            </p>
+            <img
+              src="https://assets.aceternity.com/macbook.png"
+              alt="Macbook mockup from Aceternity UI"
+              height="500"
+              width="500"
+              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+            />
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+const data = [
+  {
+    category: "Programing",
+    title: "You can do more with AI.",
+    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "DIY & Creativity",
+    title: "Enhance your productivity.",
+    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Filming & Media",
+    title: "Launching the new Apple Vision Pro.",
+    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+];
