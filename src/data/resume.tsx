@@ -9,10 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/galway",
   description:
     "AI Master Student/Web Developer. I love building things and find opportunities with new technologies.",
-  summary: [
-    "Practical experiencing implementing LLMs to solve real-world problems",
-    "Alongside a keen interest in their latest advancements and potential applications"
-  ],
+  summary: "Practical experiencing implementing LLMs to solve real-world problems\n\nAlongside a keen interest in their latest advancements and potential applications",
   avatarUrl: "/me.png",
   skills: [
     "React",
