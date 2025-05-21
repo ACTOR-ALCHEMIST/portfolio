@@ -7,6 +7,7 @@ import { DATA } from "@/data/resume";
 import { Hero } from "@/components/layout/Hero";
 import Link from "next/link";
 import Hobbies from "@/components/layout/Hobbies";
+import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -15,16 +16,15 @@ export default function Page() {
     <main className="flex flex-col min-h-[00dvh] space-y-10">
       <Hero />
       <Hobbies />
+      
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <ul className="list-disc list-inside max-w-full text-pretty font-sans text-sm text-muted-foreground dark:text-muted-foreground">
-            {DATA.summary.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+            {DATA.summary}
+          </Markdown>
         </BlurFade>
       </section>
       <section id="work">
