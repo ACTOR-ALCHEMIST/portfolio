@@ -53,19 +53,19 @@ const DummyContent = () => {
 const data = [
   {
     category: "Programing",
-    title: "You can do more with AI.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Developing AI-powered real-world problem solutions",
+    src: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/339363834/original/db441f6003c24b6960ff41b17ccff6dd761ed9e5/create-a-python-script-for-you.jpg",
     content: <DummyContent />,
   },
   {
     category: "DIY & Creativity",
-    title: "Enhance your productivity.",
+    title: "Exceptional practical skills, comprehensively assisting my creativity.",
     src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },
   {
     category: "Filming & Media",
-    title: "Launching the new Apple Vision Pro.",
+    title: "",
     src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },

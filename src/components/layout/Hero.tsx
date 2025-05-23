@@ -5,6 +5,7 @@ import BlurFade from "@/components/magicui/blur-fade"
 import BlurFadeText from "@/components/magicui/blur-fade-text"
 import { DATA } from "@/data/resume"
 import { HobbiesChain } from "@/components/HobbiesChain"
+import { TerminalAbout } from "../TerminalAbout";
 
 const BLUR_FADE_DELAY = 0.2
 
@@ -25,7 +26,9 @@ export function Hero() {
               delay={BLUR_FADE_DELAY}
               text={DATA.description}
             />
+            <TerminalAbout />
           </div>
+          
           <div className="flex flex-col items-center gap-6">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-32 sm:size-40 md:size-48 border">

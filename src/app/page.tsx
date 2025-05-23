@@ -8,6 +8,7 @@ import { Hero } from "@/components/layout/Hero";
 import Link from "next/link";
 import { Hobbies } from "@/components/layout/Hobbies";
 import Markdown from "react-markdown";
+import { TerminalAbout } from "@/components/TerminalAbout";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -16,6 +17,7 @@ export default function Page() {
     <main className="flex flex-col min-h-[00dvh] space-y-10">
       <Hero />
       <Hobbies />
+      
       
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
