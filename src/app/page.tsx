@@ -9,6 +9,7 @@ import Link from "next/link";
 import { Hobbies } from "@/components/layout/Hobbies";
 import Markdown from "react-markdown";
 import { TerminalAbout } from "@/components/TerminalAbout";
+import { Skills } from "@/components/layout/Skills";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -17,7 +18,7 @@ export default function Page() {
     <main className="flex flex-col min-h-[00dvh] space-y-10">
       <Hero />
       <Hobbies />
-      
+      <Skills />
       
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
@@ -132,7 +133,8 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+
+      {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -174,7 +176,9 @@ export default function Page() {
             </ul>
           </BlurFade>
         </div>
-      </section>
+      </section> */}
+
+      
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>

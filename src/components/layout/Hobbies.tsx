@@ -4,14 +4,35 @@ import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 export function Hobbies() {
+  const data = [
+    {
+      category: "Programing",
+      title: "Developing AI-powered real-world problem solutions",
+      src: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/339363834/original/db441f6003c24b6960ff41b17ccff6dd761ed9e5/create-a-python-script-for-you.jpg",
+      content: <DummyContent />,
+    },
+    {
+      category: "DIY & Creativity",
+      title: "Exceptional practical skills, comprehensively assisting my creativity.",
+      src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      content: <DummyContent />,
+    },
+    {
+      category: "Filming & Media",
+      title: "Creating engaging content through photography and videography",
+      src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      content: <DummyContent />,
+    },
+  ];
+
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} layout={true} />
   ));
 
   return (
-    <div className="w-full h-full py-20">
+    <div className="w-full h-full py-10">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Learn more about my skills.
+        Learn more about my favorites.
       </h2>
       <Carousel items={cards} />
     </div>
@@ -49,7 +70,6 @@ const DummyContent = () => {
     </>
   );
 };
-
 const data = [
   {
     category: "Programing",
@@ -70,3 +90,4 @@ const data = [
     content: <DummyContent />,
   },
 ];
+
