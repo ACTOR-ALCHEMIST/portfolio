@@ -145,6 +145,8 @@ const LogoColumn: React.FC<LogoColumnProps> = React.memo(
   }
 )
 
+LogoColumn.displayName = 'LogoColumn'
+
 function LogoCarousel({ columnCount = 2 }: { columnCount?: number }) {
   const [logoSets, setLogoSets] = useState<Logo[][]>([])
   const [currentTime, setCurrentTime] = useState(0)
