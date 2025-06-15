@@ -2,27 +2,36 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Jasper Hu",
-  initials: "DV",
-  url: "https://jasperhu.icu",
+  name: "Jiang Hu",
+  initials: "JH",
+  url: "https://jianghu.dev",
   location: "Galway, Ireland",
   locationLink: "https://www.google.com/maps/place/galway",
   description:
-    "AI Master Student/Web Developer. I love building things and find opportunities with new technologies.",
-  summary: "Practical experiencing implementing LLMs to solve real-world problems\n\nAlongside a keen interest in their latest advancements and potential applications",
+    "AI Specialist & Master's Student. Passionate about machine learning and building intelligent solutions.",
+  summary: "An AI specialist and a Master's student in the field with 1+ years of dedicated experience in machine learning and software development. I possess demonstrated expertise in utilizing machine learning and deep learning for complex NLP and computer vision tasks. My skills include architecting and deploying scalable, AI-driven solutions with cloud technologies to improve efficiency and drive innovation.",
   avatarUrl: "/me.png",
   skills: [
+    "Python",
+    "Java",
+    "TypeScript",
+    "JavaScript",
+    "PyTorch",
+    "Transformers",
+    "Scikit-learn",
+    "Apache Spark",
     "React",
     "Next.js",
-    "Typescript",
-    "Node.js",
-    "Python",
-    "Go",
-    "Postgres",
+    "Spring Boot",
+    "AWS",
     "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
+    "Git",
+    "Machine Learning",
+    "Deep Learning",
+    "NLP",
+    "LLM Fine-tuning",
+    "BERT",
+    "Llama",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -41,14 +50,14 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/jianghu2001/",
+        url: "https://www.linkedin.com/in/jianghu2001",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://x.com/jasperhu2001",
+        url: "https://x.com/jianghu2001",
         icon: Icons.x,
 
         navbar: true,
@@ -71,269 +80,148 @@ export const DATA = {
 
   work: [
     {
-      company: "Changsha Zhuiguang Multi-Media Studio",
-      href: "https://www.zhuiguang.com/",
-      badges: [],
+      company: "Changsha Zhuiguang Culture Media Studio",
+      href: "#",
+      badges: ["Project Lead"],
       location: "China, Hunan",
-      title: "Team Lead",
+      title: "Project Lead",
       logoUrl: "/studio.png",
-      start: "November 2021",
-      end: "April 2024",
+      start: "November 2022",
+      end: "August 2024",
       description:
-        "Led a team of 5 developers to build a web application for a local media company. The application allows users to upload and share videos, and includes features such as user authentication, video transcoding, and real-time chat.",
+        "Led event design and execution for 10+ client projects, aligning strategies with objectives via stakeholder collaboration. Managed budgets, achieving a 15% event cost reduction while maintaining quality through strategic resource allocation. Resolved logistical challenges under tight deadlines, ensuring seamless event delivery.",
     }
   ],
   education: [
     {
       school: "University of Galway",
       href: "https://www.universityofgalway.ie",
-      degree: "Master's Degree of Computer Science (MSc)",
+      degree: "Master of Science in Computer Science - AI",
       logoUrl: "/galway.png",
-      start: "2024",
-      end: "2025",
+      start: "September 2024",
+      end: "August 2025",
     },
     {
-      school: "Hunan international Economics University",
+      school: "Hunan International Economics University",
       href: "https://en.hieu.edu.cn/",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
+      degree: "Bachelor of Computer Science",
       logoUrl: "/hieu.png",
-      start: "2021",
-      end: "2024",
+      start: "September 2020",
+      end: "June 2024",
     },
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "LLM Mathematical Task Fine-tuning with Knowledge Distillation",
+      href: "#",
+      dates: "February 2025",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Fine-tuned Llama model on mathematical datasets, significantly improving accuracy on specialized tasks. Distilled mathematical reasoning capabilities from Gemini 2.0 to a smaller model (DeepSeek-R1-Distill-Qwen-1.5B). Developed a user-interactive web application using React and Next.js for model demonstration.",
       technologies: [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "Llama",
+        "DeepSeek",
+        "React",
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Machine Learning",
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/ACTOR-ALCHEMIST",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Fine-tuning BERT for Sentiment Analysis",
+      href: "#",
+      dates: "November 2024",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Achieved 92% accuracy in sentiment classification by fine-tuning BERT on 10,000+ custom reviews. Implemented data augmentation techniques to address class imbalance and enhance model robustness. Created an interactive model interface using Gradio for real-time sentiment prediction.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Python",
+        "BERT",
+        "Transformers",
+        "PyTorch",
+        "Gradio",
+        "Scikit-learn",
+        "NLP",
+        "Machine Learning",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/ACTOR-ALCHEMIST",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      video: "",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "Advanced Classification and Clustering of Health Conditions",
+      href: "#",
+      dates: "October 2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "Analyzed 40,000+ health records using K-Means and Hierarchical Clustering, with PCA/UMAP for dimensionality reduction. Improved clustering accuracy by 10% through optimal selection of UMAP and Hierarchical Clustering.",
       technologies: [
+        "Python",
+        "Scikit-learn",
+        "K-Means",
+        "Hierarchical Clustering",
+        "PCA",
+        "UMAP",
+        "Data Analysis",
+        "Machine Learning",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ACTOR-ALCHEMIST",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "NextChat - OpenAI Model Integration",
+      href: "https://github.com/ChatGPTNextWeb/NextChat",
+      dates: "April 2025",
+      active: true,
+      description:
+        "Pioneered the integration of OpenAI's latest models, o3 and o4-mini, into a leading LLM web application (84k+ GitHub stars). Engineered refined vision model detection logic and optimized API request structures for seamless compatibility.",
+      technologies: [
+        "TypeScript",
+        "React",
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "OpenAI API",
+        "JavaScript",
+        "LLM Integration",
       ],
       links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://github.com/ChatGPTNextWeb/NextChat",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ChatGPTNextWeb/NextChat/pull/6457",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      video: "",
     },
   ],
-  hackathons: [
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      dates: "March 23rd - 24th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
-      icon: "public",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
-      links: [],
-    },
-    {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
-      links: [
-        {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
-        },
-      ],
-    },
-    {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
-      description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
-        },
-        {
-          title: "ML",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
-        },
-      ],
-    },
-    {
-      title: "ETH Waterloo",
-      dates: "October 13th - 15th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a blockchain application for doctors and pharmacists to perform trustless transactions and prevent overdosage in patients.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
-      links: [
-        {
-          title: "Organization",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ethdocnet",
-        },
-      ],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 15th - 17th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a virtual reality application allowing users to see themselves in third person.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Streamer Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/htn2017",
-        },
-        {
-          title: "Client Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/RTSPClient",
-        },
-      ],
-    },
-  ],
+  hackathons: [],
 } as const;

@@ -25,7 +25,6 @@
     "framer-motion": "^12.12.1",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.395.0",
-    "motion": "^12.12.1",
     "next": "14.2.4",
     "next-themes": "^0.3.0",
     "react": "^18.2.0",

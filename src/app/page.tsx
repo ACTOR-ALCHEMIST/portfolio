@@ -2,38 +2,36 @@ import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
-import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import { Hero } from "@/components/layout/Hero";
 import Link from "next/link";
 import { Hobbies } from "@/components/layout/Hobbies";
 import Markdown from "react-markdown";
-import { TerminalAbout } from "@/components/TerminalAbout";
 import { Skills } from "@/components/layout/Skills";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[00dvh] space-y-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-16 px-4 py-8 max-w-6xl mx-auto">
       <Hero />
       <Hobbies />
       <Skills />
       
-      <section id="about">
+      <section id="about" className="max-w-4xl mx-auto px-4">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">About Me</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+          <Markdown className="prose prose-lg max-w-none text-pretty font-sans text-muted-foreground dark:prose-invert mx-auto">
             {DATA.summary}
           </Markdown>
         </BlurFade>
       </section>
-      <section id="work">
+      <section id="work" className="max-w-4xl mx-auto px-4">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">Work Experience</h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -55,10 +53,10 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section id="education">
+      <section id="education" className="max-w-4xl mx-auto px-4">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">Education</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
@@ -78,21 +76,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
-          </BlurFade>
-          <div className="flex flex-wrap gap-1">
-              {DATA.skills.map((skill, id) => (
-                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                  <Badge key={skill} variant="default" />
-                </BlurFade>
-              ))}
-          </div>
-        </div>
-      </section>
-      <section id="projects">
+      <section id="projects" className="max-w-6xl mx-auto px-4">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -179,7 +163,7 @@ export default function Page() {
       </section> */}
 
       
-      <section id="contact">
+      <section id="contact" className="max-w-4xl mx-auto px-4">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
