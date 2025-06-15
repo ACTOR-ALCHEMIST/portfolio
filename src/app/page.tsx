@@ -18,7 +18,7 @@ export default function Page() {
       <Hobbies />
       <Skills />
       
-      <section id="about" className="max-w-4xl mx-auto px-4">
+      {/* <section id="about" className="max-w-4xl mx-auto px-4">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">About Me</h2>
         </BlurFade>
@@ -27,7 +27,7 @@ export default function Page() {
             {DATA.summary}
           </Markdown>
         </BlurFade>
-      </section>
+      </section> */}
       <section id="work" className="max-w-4xl mx-auto px-4">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
