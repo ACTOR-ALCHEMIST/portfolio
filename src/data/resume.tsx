@@ -2,9 +2,9 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Jiang Hu",
+  name: "Jasper Hu",
   initials: "JH",
-  url: "https://jianghu.dev",
+  url: "https://jasperhu.icu",
   location: "Galway, Ireland",
   locationLink: "https://www.google.com/maps/place/galway",
   description:
@@ -57,13 +57,13 @@ export const DATA = {
       },
       X: {
         name: "X",
-        url: "https://x.com/jianghu2001",
+        url: "https://x.com/jasperhu2001",
         icon: Icons.x,
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
+      Bilibili: {
+        name: "Bilibili",
         url: "https://space.bilibili.com/16310601?spm_id_from=333.1007.0.0",
         icon: Icons.bilibili,
         navbar: true,
@@ -103,7 +103,7 @@ export const DATA = {
     },
     {
       school: "Hunan International Economics University",
-      href: "https://en.hieu.edu.cn/",
+      href: "https://www.hieu.edu.cn/",
       degree: "Bachelor of Computer Science",
       logoUrl: "/hieu.png",
       start: "September 2020",
