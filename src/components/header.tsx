@@ -91,12 +91,6 @@ export default function Header() {
 
           {/* Desktop Right Side */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link
-              href={`mailto:${DATA.contact.email}`}
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Get in Touch
-            </Link>
             <ModeToggle />
           </div>
 
