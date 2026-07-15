@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Push risk-control synthetic data pipeline</title>
+  <desc id="desc">An agent pipeline that moves from bad-case mining and rule matching through generation and automated judging, producing a cumulative 330,000 synthetic samples.</desc>
+  <rect width="960" height="540" fill="#F7F8FA"/>
+  <rect x="74" y="86" width="812" height="368" rx="30" fill="#FFFFFF" stroke="#E4E7EB" stroke-width="2"/>
+  <g fill="#20242A" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-weight="800" font-size="24">
+    <text x="142" y="202">Badcase</text>
+    <text x="340" y="202">Rules</text>
+    <text x="526" y="202">Agent</text>
+    <text x="706" y="202">Judge</text>
+  </g>
+  <g fill="#EEF3F8" stroke="#DCE4EC" stroke-width="2">
+    <rect x="126" y="228" width="126" height="86" rx="16"/>
+    <rect x="326" y="228" width="126" height="86" rx="16"/>
+    <rect x="516" y="228" width="126" height="86" rx="16"/>
+    <rect x="696" y="228" width="126" height="86" rx="16"/>
+  </g>
+  <path d="M266 270H314M466 270H504M656 270H684" stroke="#2F6FDD" stroke-width="8" stroke-linecap="round"/>
+  <path d="M296 250L316 270L296 290M486 250L506 270L486 290M666 250L686 270L666 290" fill="none" stroke="#2F6FDD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="136" y="390" fill="#20242A" font-size="42" font-weight="800" font-family="Avenir Next, Helvetica, Arial, sans-serif">33w synthetic data</text>
+</svg>

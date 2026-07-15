@@ -1,0 +1,10 @@
+---
+title: "BERT sentiment analysis as a product workflow"
+publishedAt: "2024-11-12"
+summary: "A compact write-up on moving from model training to an interface that people can actually test."
+tags: ["BERT", "NLP", "Product"]
+---
+
+Sentiment analysis is a useful exercise because the model quality is only one part of the experience. The interface needs to make confidence, edge cases, and unexpected predictions easy to inspect.
+
+The workflow I prefer is simple: prepare balanced examples, train a baseline, collect error cases, then expose the model through a small demo so iteration is fast.

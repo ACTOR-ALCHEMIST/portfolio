@@ -1,0 +1,10 @@
+---
+title: "LLM distillation notes for math reasoning"
+publishedAt: "2025-02-21"
+summary: "Practical observations from turning a large-model reasoning workflow into a smaller model demo."
+tags: ["LLM", "Distillation", "Reasoning"]
+---
+
+The useful part of a distillation project is not only the final metric. It is the discipline of defining examples, failure modes, evaluation prompts, and demo flows that make model behavior visible.
+
+For mathematical reasoning tasks, I usually separate three layers: data preparation, teacher response design, and student model evaluation. Keeping those layers separate makes later debugging much easier.

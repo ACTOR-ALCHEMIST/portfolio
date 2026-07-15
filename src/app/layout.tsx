@@ -1,30 +1,22 @@
-import Navbar from "@/components/navbar";
-import Header from "@/components/header";
-import { ThemeProvider } from "@/components/theme-provider";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { DATA } from "@/data/resume";
-import { cn } from "@/lib/utils";
+import { PortfolioShell } from "@/components/portfolio-shell";
+import { portfolio } from "@/data/portfolio";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  metadataBase: new URL("https://jasperhu.icu"),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: `${portfolio.profile.name} | Portfolio`,
+    template: `%s | ${portfolio.profile.name}`,
   },
-  description: DATA.description,
+  description:
+    "Personal portfolio for AI, software engineering, research, projects, and writing.",
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
+    title: `${portfolio.profile.name} | Portfolio`,
+    description:
+      "Personal portfolio for AI, software engineering, research, projects, and writing.",
+    url: "https://jasperhu.icu",
+    siteName: `${portfolio.profile.name}`,
     locale: "en_US",
     type: "website",
   },
@@ -40,12 +32,8 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: `${portfolio.profile.name} | Portfolio`,
     card: "summary_large_image",
-  },
-  verification: {
-    google: "",
-    yandex: "",
   },
 };
 
@@ -55,20 +43,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased pt-16 pb-24",
-          fontSans.variable
-        )}
-      >
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <Header />
-          <TooltipProvider delayDuration={0}>
-            {children}
-            <Navbar />
-          </TooltipProvider>
-        </ThemeProvider>
+    <html lang="en">
+      <body>
+        <PortfolioShell>{children}</PortfolioShell>
       </body>
     </html>
   );
